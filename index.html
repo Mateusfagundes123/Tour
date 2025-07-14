@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Visita Virtual IFSC</title>
+   <link rel="stylesheet" href="./CSS/Style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+  <link rel="icon" href="./IMG/rota.png" type="image/png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<header class="barra">
+    <div class="voltarbarra">
+        <p>IFSC Chapecó</p>
+    </div>
+    <div class="hamburguerbarra">
+      <p>Visite os blocos</p>
+      <a href="#" id="btn-menu">
+        <img src="./IMG/hamburger.png" alt="Menu">
+      </a>
+    </div>
+  </header>
+
+  <nav id="menu" class="menu-mobile">
+    <button id="fechar-menu">✖</button>
+    <ul>
+  <li><a href="jogoSelvagem.html"><button class="categoriaJogo">Home</button></a></li>
+  <li><a href="jogoFazenda.html"><button class="categoriaJogo">Endereço</button></a></li>
+  <li><a href="jogoDomesticos.html"><button class="categoriaJogo">Imagens</button></a></li>
+
+  <!-- Item com submenu -->
+  <li>
+    <button class="categoriaJogo" id="btn-blocos">Blocos ▾</button>
+    <ul id="submenu-blocos" class="submenu oculto">
+      <li><a href="./HTML/blocoA.html"><button class="categoriaJogo">Bloco A</button></a></li>
+      <li><a href="./HTML/blocoB.html"><button class="categoriaJogo">Bloco B</button></a></li>
+      <li><a href="./HTML/blocoC.html"><button class="categoriaJogo">Bloco C</button></a></li>
+      <li><a href="./HTML/blocoD.html"><button class="categoriaJogo">Bloco D</button></a></li>
+      <li><a href="./HTML/blocoE.html"><button class="categoriaJogo">Bloco E</button></a></li>
+      <li><a href="./HTML/blocoF.html"><button class="categoriaJogo">Bloco F</button></a></li>
+
+    </ul>
+  </li>
+</ul>
+  </nav>
+  <div class="ImagemPrincipal">
+      <img class="IMG" src="./IMG/imgcampuslateral.png" alt="">
+      <button>    
+        <div class="TextoEmcimaImagem">
+          <p class="colorWhite">Conheça o campus</p>
+        </div>
+      </button>
+  </div>
+
+  <div class="linhaverde"></div>
+
+  <div class="textoblocos">
+  <h2>🌿 Conheça os blocos do campus</h2>
+</div>
+
+  <section class="container">
+    <a class="child" href="./HTML/blocoA.html">
+        <img src="./IMG/blocoA.jpg" alt="">
+        <p>Bloco A</p>
+    </a>
+    <a class="child" href="./HTML/blocoB.html">
+        <img src="./IMG/blocoB.jpg" alt="">
+        <p>Bloco B</p>
+    </a>
+    <a class="child" href="./HTML/blocoC.html">
+        <img src="./IMG/blocoC.png" alt="">
+        <p>Bloco C</p>
+    </a>
+    <a class="child" href="./HTML/blocoD.html">
+        <img src="./IMG/blocoD.png" alt="">
+        <p>Bloco D</p>
+    </a>
+    <a class="child" href="./HTML/blocoE.html">
+        <img src="./IMG/blocoE.png" alt="">
+        <p>Bloco E</p>
+    </a>
+    <a class="child" href="./HTML/blocoF.html">
+        <img src="./IMG/blocoF.png" alt="">
+        <p>Bloco F</p>
+    </a>
+</section>
+
+ <div class="linhaverdepequena"></div>
+
+
+    
+<section class="introducao-campus">
+  <h2>Confira algumas imagens do campus</h2>
+  <p>
+    Abaixo você pode explorar alguns dos principais pontos do Instituto, incluindo a entrada, corredores e os diferentes blocos.
+  </p>
+</section>
+
+<div class="BlocoA">
+  <div class="blocoaimg1">
+    <p>Entrada Do campus</p>
+    <iframe src="https://momento360.com/e/u/d2d3921e68894bc6a1b8ac507d48f1b0?utm_campaign=embed&utm_source=other&heading=-52.39&pitch=-10.31&field-of-view=75&size=medium&display-plan=true"></iframe>
+  </div>
+
+  <div class="blocoaimg2">
+    <p>Entrada blocos A e B</p>
+    <iframe src="https://momento360.com/e/u/48c05f6663db43949f6da2fd562df530?utm_campaign=embed&utm_source=other&heading=0&pitch=0&field-of-view=75&size=medium&display-plan=true"></iframe>
+  </div>
+
+</div>
+ <div class="linhaverdepequena2"></div>
+
+<section class="reAcessibilidade-campus">
+  <h2>Recursos de Acessibilidade</h2>
+  <p class="descricao">
+    Abaixo você pode explorar alguns dos principais pontos de acessibilidade do Instituto.
+  </p>
+
+  <div class="recursos-grid">
+    <div class="recurso">
+      <img src="./IMG/elevador.png" alt="Elevador de acesso">
+      <p>Elevador de acesso</p>
+    </div>
+    <div class="recurso">
+      <img src="./IMG/pisoTatil.png" alt="Piso tátil">
+      <p>Piso tátil</p>
+    </div>
+    <div class="recurso">
+      <img src="./IMG/rampa.png" alt="Rampa de acesso">
+      <p>Rampa de acesso</p>
+    </div>
+    <div class="recurso">
+      <img src="./IMG/banheiro.png" alt="Banheiro acessível">
+      <p>Banheiro acessível</p>
+    </div>
+  </div>
+</section>
+
+
+<div class="linhaverdepequena2"></div>
+
+
+
+<section class="introducao-mapa">
+  <h2>Localização do campus</h2>
+</section>
+
+<div class="corVerde">
+<div class="localizacao-container">
+  <div class="parte1">
+    <p class="instituicao">Instituto Federal de Santa Catarina</p>
+    <p class="campus">Campus Chapecó</p>
+    <div class="detalhes-endereco">
+      <p><strong>Endereço:</strong> Av. Nereu Ramos, 3450 D - Seminário</p>
+      <p><strong>CEP:</strong> 89813-000 - Chapecó/SC</p>
+      <p><strong>Telefone:</strong> (49) 3313-1240</p>
+    </div>
+  </div>
+  
+  <div class="parte2">
+    <iframe 
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5021.229720468752!2d-52.59895374331509!3d-27.13911924339824!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94e4b1402da2b643%3A0x9f73eda2f33b7591!2zSUZTQyBDw6JtcHVzIENoYXBlY8Oz!5e0!3m2!1spt-BR!2sbr!4v1748393769449!5m2!1spt-BR!2sbr" 
+      width="100%" 
+      height="450" 
+      style="border:0;" 
+      allowfullscreen="" 
+      loading="lazy" 
+      referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+  </div>
+</div>
+<div class="como-chegar">
+  <h2>Como Chegar ao Seminário de ônibus</h2>
+  
+  <div class="opcoes-transporte">
+    <!-- Linha 08 - Seminário -->
+    <div class="transporte">
+      <h3>Ônibus - LINHA 08 – SEMINÁRIO</h3>
+      <div class="tabela-horarios">
+        <table>
+          <thead>
+            <tr>
+              <th colspan="2">SEGUNDA A SEXTA-FEIRA</th>
+            </tr>
+            <tr>
+              <th>Horário</th>
+              <th>Destino</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>05:35</td><td>Seminário</td></tr>
+            <tr><td>06:10</td><td>Seminário</td></tr>
+            <tr><td>06:35</td><td>Seminário</td></tr>
+            <tr><td>06:50</td><td>Seminário</td></tr>
+            <tr><td>07:10</td><td>Seminário</td></tr>
+            <tr><td>07:30</td><td>Seminário</td></tr>
+            <tr><td>07:45</td><td>Seminário</td></tr>
+            <tr><td>08:05</td><td>Seminário</td></tr>
+            <tr><td>08:20</td><td>Seminário</td></tr>
+            <tr><td>09:00</td><td>Seminário</td></tr>
+            <tr><td>09:40</td><td>Seminário</td></tr>
+            <tr><td>10:20</td><td>Seminário</td></tr>
+            <tr><td>11:00</td><td>Seminário</td></tr>
+            <tr><td>11:35</td><td>Seminário</td></tr>
+            <tr><td>11:45</td><td>Seminário</td></tr>
+            <tr><td>12:10</td><td>Seminário</td></tr>
+            <tr><td>12:20</td><td>Seminário</td></tr>
+            <tr><td>12:40</td><td>Seminário</td></tr>
+            <tr><td>13:05</td><td>Seminário</td></tr>
+            <tr><td>13:15</td><td>Seminário</td></tr>
+            <tr><td>13:30</td><td>Seminário</td></tr>
+            <tr><td>13:50</td><td>Seminário</td></tr>
+            <tr><td>14:20</td><td>Seminário</td></tr>
+            <tr><td>14:50</td><td>Seminário</td></tr>
+            <tr><td>15:30</td><td>Seminário</td></tr>
+            <tr><td>16:00</td><td>Seminário</td></tr>
+            <tr><td>16:15</td><td>Seminário</td></tr>
+            <tr><td>16:30</td><td>Seminário</td></tr>
+            <tr><td>16:50</td><td>Seminário</td></tr>
+            <tr><td>17:15</td><td>Seminário</td></tr>
+            <tr><td>17:20</td><td>Seminário</td></tr>
+            <tr><td>17:35</td><td>Seminário</td></tr>
+            <tr><td>17:45</td><td>Seminário</td></tr>
+            <tr><td>18:00</td><td>Seminário</td></tr>
+            <tr><td>18:10</td><td>Seminário</td></tr>
+            <tr><td>18:25</td><td>Seminário</td></tr>
+            <tr><td>18:35</td><td>Seminário</td></tr>
+            <tr><td>18:45</td><td>Seminário</td></tr>
+            <tr><td>19:00</td><td>Seminário</td></tr>
+            <tr><td>19:30</td><td>Seminário</td></tr>
+            <tr><td>20:00</td><td>Seminário</td></tr>
+            <tr><td>20:40</td><td>Seminário</td></tr>
+            <tr><td>21:15</td><td>Seminário</td></tr>
+            <tr><td>21:45</td><td>Seminário</td></tr>
+            <tr><td>21:55</td><td>Seminário</td></tr>
+            <tr><td>22:10</td><td>Seminário</td></tr>
+            <tr><td>22:40</td><td>Seminário / Progresso</td></tr>
+            <tr><td>23:00</td><td>Seminário / Progresso</td></tr>
+            <tr><td>23:40</td><td>Seminário / Progresso</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    
+    <!-- Linha 26 - Progresso -->
+    <div class="transporte">
+      <h3>Ônibus - LINHA 26 – PROGRESSO</h3>
+      <div class="tabela-horarios">
+        <table>
+          <thead>
+            <tr>
+              <th colspan="2">SEGUNDA A SEXTA-FEIRA</th>
+            </tr>
+            <tr>
+              <th>Horário</th>
+              <th>Destino</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>00:35</td><td>Hospital Regional / Vento Minuano / Seminário / Progresso (ter. a sab)</td></tr>
+            <tr><td>01:05</td><td>Seminário / Progresso / Vento Minuano / Hospital Regional</td></tr>
+            <tr><td>01:40</td><td>Seminário / Progresso / Hospital Regional</td></tr>
+            <tr><td>03:10</td><td>Seminário / Progresso / Hospital Regional</td></tr>
+            <tr><td>04:50</td><td>Progresso</td></tr>
+            <tr><td>05:30</td><td>Progresso</td></tr>
+            <tr><td>05:55</td><td>Progresso</td></tr>
+            <tr><td>06:20</td><td>Progresso</td></tr>
+            <tr><td>06:45</td><td>Progresso</td></tr>
+            <tr><td>07:05</td><td>Progresso</td></tr>
+            <tr><td>07:20</td><td>Progresso</td></tr>
+            <tr><td>07:40</td><td>Progresso</td></tr>
+            <tr><td>08:00</td><td>Progresso</td></tr>
+            <tr><td>08:40</td><td>Progresso</td></tr>
+            <tr><td>09:20</td><td>Progresso</td></tr>
+            <tr><td>10:00</td><td>Progresso</td></tr>
+            <tr><td>10:40</td><td>Progresso</td></tr>
+            <tr><td>11:20</td><td>Progresso</td></tr>
+            <tr><td>11:40</td><td>Progresso</td></tr>
+            <tr><td>12:05</td><td>Progresso</td></tr>
+            <tr><td>12:35</td><td>Progresso</td></tr>
+            <tr><td>12:50</td><td>Progresso</td></tr>
+            <tr><td>13:20</td><td>Progresso</td></tr>
+            <tr><td>13:40</td><td>Progresso</td></tr>
+            <tr><td>14:20</td><td>Progresso</td></tr>
+            <tr><td>15:00</td><td>Progresso</td></tr>
+            <tr><td>15:40</td><td>Progresso</td></tr>
+            <tr><td>16:20</td><td>Progresso</td></tr>
+            <tr><td>17:00</td><td>Progresso</td></tr>
+            <tr><td>17:40</td><td>Progresso</td></tr>
+            <tr><td>18:05</td><td>Progresso</td></tr>
+            <tr><td>18:20</td><td>Progresso</td></tr>
+            <tr><td>18:50</td><td>Progresso</td></tr>
+            <tr><td>19:20</td><td>Progresso</td></tr>
+            <tr><td>20:10</td><td>Progresso</td></tr>
+            <tr><td>20:50</td><td>Progresso</td></tr>
+            <tr><td>21:30</td><td>Progresso</td></tr>
+            <tr><td>22:00</td><td>Progresso</td></tr>
+            <tr><td>22:40</td><td>Seminário / Progresso</td></tr>
+            <tr><td>23:00</td><td>Seminário / Progresso</td></tr>
+            <tr><td>23:40</td><td>Seminário / Progresso</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer class="footer">
+  <p>&copy; 2025 IFSC Chapecó — Tour Virtual</p>
+</footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const btnMenu = document.getElementById("btn-menu");
+    const menu = document.getElementById("menu");
+    const fecharMenu = document.getElementById("fechar-menu");
+
+    const btnBlocos = document.getElementById("btn-blocos");
+    const submenuBlocos = document.getElementById("submenu-blocos");
+
+    btnMenu.addEventListener("click", function (event) {
+      event.preventDefault();
+      menu.classList.add("open");
+    });
+
+    fecharMenu.addEventListener("click", function () {
+      menu.classList.remove("open");
+      submenuBlocos.classList.add("oculto"); 
+    });
+
+    btnBlocos.addEventListener("click", function () {
+      submenuBlocos.classList.toggle("oculto");
+      btnBlocos.textContent = submenuBlocos.classList.contains("oculto") ? "Blocos ▾" : "Blocos ▴";
+    });
+  });
+  </script>
+
+</body>
+</html>
