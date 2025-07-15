@@ -1,4 +1,3 @@
-
 .container{
     max-width: 1000px;
     height: auto;
@@ -190,9 +189,7 @@ footer {
     font-size: 24px;
     text-transform: uppercase;
     font-weight: bold;
-    margin-top: 9px;
-
- 
+    margin-top: 9px; 
 }
 .hamburguerbarra {
   position: fixed;
@@ -201,6 +198,7 @@ footer {
   display: flex;
   align-items: center;
   gap: 10px;
+  margin-top: 10px;
 }
 .hamburguerbarra p{
   font-size: 20px;
@@ -335,7 +333,7 @@ footer {
 }
 
 .introducao-campus p {
-   font-size: 1.5em; /* maior */
+   font-size: 1.5em; 
   color: #555;
   margin-bottom: 50px;
   max-width: 900px;
@@ -353,17 +351,15 @@ footer {
   margin: 10px auto 0;
   border-radius: 2px;
 }
-
 .BlocoA {
   width: 100%;
   display: flex;
   justify-content: center;
   gap: 40px;
   background-color: #eaf4ec;
-  padding: 40px 0;
-  margin: 0; /* remove espaço entre elementos */
+  padding:0;
+  margin: 0; 
 }
-
 .blocoaimg1,
 .blocoaimg2 {
   width: 45%;
@@ -375,7 +371,6 @@ footer {
   height: 500px;
   border: none;
 }
-/*+++++++++++++++++++++++++++++++++++*/
 .reAcessibilidade-campus {
   text-align: center;
   padding: 60px 40px;
@@ -383,13 +378,12 @@ footer {
 }
 
 .reAcessibilidade-campus h2 {
-  font-size: 3em; /* 50% maior */
+  font-size: 3em; 
   color: #2e7d32;
   margin-bottom: 20px;
 }
-
 .reAcessibilidade-campus .descricao {
-  font-size: 1.5em; /* maior */
+  font-size: 1.5em; 
   color: #555;
   margin-bottom: 50px;
   max-width: 900px;
@@ -397,55 +391,55 @@ footer {
   margin-right: auto;
   line-height: 1.6;
 }
-
 .reAcessibilidade-campus h2::after {
   content: "";
   display: block;
-  width: 100px; /* mais largo */
-  height: 5px; /* mais grosso */
+  width: 100px; 
+  height: 5px; 
   background-color: #2e7d32;
-  margin: 20px auto 0; /* mais espaço */
+  margin: 20px auto 0; 
   border-radius: 3px;
 }
 
-/* Grade dos recursos - 4 colunas com imagens muito grandes */
 .recursos-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 40px; /* mais espaço entre itens */
-  max-width: 1600px; /* container mais largo */
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 40px;
+  max-width: 1300px;
   margin: 0 auto;
   padding: 0 40px;
 }
-
 .recurso {
   background-color: #f9f9f9;
-  border-radius: 20px; /* cantos mais arredondados */
-  padding: 50px 30px; /* muito mais espaço interno */
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12); /* sombra mais pronunciada */
+  border-radius: 20px;
+  padding: 20px 10px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
   transition: all 0.3s ease;
+  text-align: center;
+  max-width: 280px;
+  margin: 0 auto; 
 }
-
 .recurso:hover {
-  transform: translateY(-10px); /* efeito hover mais pronunciado */
+  transform: translateY(-10px); 
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
 }
 
 .recurso img {
-  width: 240px; /* 3 vezes maior (era 80px) */
-  height: 240px;
+  max-width: 100%;
+  height: auto;
+  max-height: 220px; 
   object-fit: contain;
-  margin-bottom: 25px;
+  margin: 0 auto 25px auto;
+  display: block;
 }
 
 .recurso p {
-  font-size: 1.8em; /* texto muito maior */
+  font-size: 1.8em; 
   color: #333;
   margin: 0;
-  font-weight: 600; /* mais negrito */
+  font-weight: 600; 
 }
 
-/* Responsividade */
 @media (max-width: 1200px) {
   .recursos-grid {
     grid-template-columns: repeat(2, 1fr);
@@ -482,7 +476,6 @@ footer {
   }
 }
 
-/* Responsividade - ajusta para 2 colunas em telas menores */
 @media (max-width: 768px) {
   .recursos-grid {
     grid-template-columns: repeat(1, 1fr);
@@ -495,8 +488,6 @@ footer {
   }
 }
 
-/*________________________________*/
-
 
 @media (max-width: 768px) {
 
@@ -504,32 +495,25 @@ footer {
     height: 100px;
   }
 
-  .hamburguerbarra p{
-    font-size: 20px;
-    margin-top: 40px;
-    margin-right: 7px;
-
-  }
   .hamburguerbarra img {
     width: 50px;
     cursor: pointer;
+    margin-top: 14px;
   }
-
 
   .BlocoA {
     flex-direction: column;
     align-items: center;
     gap: 20px;
   }
-
   .blocoaimg1,
   .blocoaimg2 {
-    width: 90%; /* Ocupa quase toda a largura da tela */
+    width: 90%; 
   }
 
   .blocoaimg1 iframe,
   .blocoaimg2 iframe {
-    height: 300px; /* Menor altura em celular */
+    height: 300px; 
   }
 }
 .linhaverde{
@@ -540,7 +524,7 @@ margin-top: 20px;
 
 }
 
-/*________________*/
+
 
 .introducao-mapa {
   text-align: center;
@@ -548,7 +532,7 @@ margin-top: 20px;
   background-color: #eaf4ec;
 }
 .introducao-mapa h2{
-  font-size: 3em; /* 50% maior */
+  font-size: 3em; 
   color: #2e7d32;
   margin-bottom: 20px;
 }
@@ -690,7 +674,6 @@ tr:hover {
   background-color: #e8f5e9;
 }
 
-
 @media (max-width: 900px) {
   .opcoes-transporte {
     flex-direction: column;
@@ -706,6 +689,10 @@ tr:hover {
   
   th, td {
     padding: 8px 10px;
+  }
+  
+  .parte2 {
+    min-width: 270px;
   }
 }
 /*__________________*/

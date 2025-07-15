@@ -14,7 +14,6 @@
         <p>IFSC Chapecó</p>
     </div>
     <div class="hamburguerbarra">
-      <p>Visite os blocos</p>
       <a href="#" id="btn-menu">
         <img src="./IMG/hamburger.png" alt="Menu">
       </a>
@@ -24,11 +23,10 @@
   <nav id="menu" class="menu-mobile">
     <button id="fechar-menu">✖</button>
     <ul>
-  <li><a href="jogoSelvagem.html"><button class="categoriaJogo">Home</button></a></li>
-  <li><a href="jogoFazenda.html"><button class="categoriaJogo">Endereço</button></a></li>
-  <li><a href="jogoDomesticos.html"><button class="categoriaJogo">Imagens</button></a></li>
+  <li><a href="#"><button class="categoriaJogo">Home</button></a></li>
+  <li><a href="./HTML/tourMaps.html"><button class="categoriaJogo">Tour</button></a></li>
+  <li><a href="#maps"><button class="categoriaJogo">Endereço</button></a></li>
 
-  <!-- Item com submenu -->
   <li>
     <button class="categoriaJogo" id="btn-blocos">Blocos ▾</button>
     <ul id="submenu-blocos" class="submenu oculto">
@@ -44,12 +42,10 @@
 </ul>
   </nav>
   <div class="ImagemPrincipal">
-      <img class="IMG" src="./IMG/imgcampuslateral.png" alt="">
-      <button>    
+      <img class="IMG" src="./IMG/imgcampuslateral.png" alt="">    
         <div class="TextoEmcimaImagem">
           <p class="colorWhite">Conheça o campus</p>
         </div>
-      </button>
   </div>
 
   <div class="linhaverde"></div>
@@ -86,13 +82,11 @@
 </section>
 
  <div class="linhaverdepequena"></div>
-
-
-    
+  
 <section class="introducao-campus">
   <h2>Confira algumas imagens do campus</h2>
   <p>
-    Abaixo você pode explorar alguns dos principais pontos do Instituto, incluindo a entrada, corredores e os diferentes blocos.
+    Abaixo você pode explorar alguns dos principais pontos do Instituto
   </p>
 </section>
 
@@ -131,17 +125,14 @@
     </div>
     <div class="recurso">
       <img src="./IMG/banheiro.png" alt="Banheiro acessível">
-      <p>Banheiro acessível</p>
+      <p id="maps">Banheiro acessível</p>
     </div>
   </div>
 </section>
 
+<div  class="linhaverdepequena2"></div>
 
-<div class="linhaverdepequena2"></div>
-
-
-
-<section class="introducao-mapa">
+<section  class="introducao-mapa">
   <h2>Localização do campus</h2>
 </section>
 
@@ -173,7 +164,6 @@
   <h2>Como Chegar ao Seminário de ônibus</h2>
   
   <div class="opcoes-transporte">
-    <!-- Linha 08 - Seminário -->
     <div class="transporte">
       <h3>Ônibus - LINHA 08 – SEMINÁRIO</h3>
       <div class="tabela-horarios">
@@ -242,7 +232,6 @@
       </div>
     </div>
     
-    <!-- Linha 26 - Progresso -->
     <div class="transporte">
       <h3>Ônibus - LINHA 26 – PROGRESSO</h3>
       <div class="tabela-horarios">
@@ -310,31 +299,8 @@
 </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"></script>
-  <script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const btnMenu = document.getElementById("btn-menu");
-    const menu = document.getElementById("menu");
-    const fecharMenu = document.getElementById("fechar-menu");
 
-    const btnBlocos = document.getElementById("btn-blocos");
-    const submenuBlocos = document.getElementById("submenu-blocos");
-
-    btnMenu.addEventListener("click", function (event) {
-      event.preventDefault();
-      menu.classList.add("open");
-    });
-
-    fecharMenu.addEventListener("click", function () {
-      menu.classList.remove("open");
-      submenuBlocos.classList.add("oculto"); 
-    });
-
-    btnBlocos.addEventListener("click", function () {
-      submenuBlocos.classList.toggle("oculto");
-      btnBlocos.textContent = submenuBlocos.classList.contains("oculto") ? "Blocos ▾" : "Blocos ▴";
-    });
-  });
-  </script>
+  <script src="./JS/javaScript.js"></script>
 
 </body>
 </html>

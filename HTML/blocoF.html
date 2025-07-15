@@ -11,72 +11,12 @@
   
 </head>
 
-  <style>
-    .container360 {
-      max-width: 1000px;
-      margin: 100px auto 50px auto;
-      padding: 0 20px;
-    }
-
-    .view360 {
-      margin-bottom: 50px;
-      text-align: center;
-    }
-
-    .view360 iframe {
-      width: 100%;
-      height: 500px;
-      border: none;
-      border-radius: 15px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.2);
-    }
-
-    .view360 p {
-      margin-top: 10px;
-      font-weight: bold;
-      color: #24551d;
-    }
-
-    footer {
-      background-color: #24551d;
-      color: white;
-      text-align: center;
-      padding: 15px;
-    }
-  </style>
-   <script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const btnMenu = document.getElementById("btn-menu");
-    const menu = document.getElementById("menu");
-    const fecharMenu = document.getElementById("fechar-menu");
-
-    const btnBlocos = document.getElementById("btn-blocos");
-    const submenuBlocos = document.getElementById("submenu-blocos");
-
-    btnMenu.addEventListener("click", function (event) {
-      event.preventDefault();
-      menu.classList.add("open");
-    });
-
-    fecharMenu.addEventListener("click", function () {
-      menu.classList.remove("open");
-      submenuBlocos.classList.add("oculto"); // fecha o submenu ao fechar o menu principal
-    });
-
-    btnBlocos.addEventListener("click", function () {
-      submenuBlocos.classList.toggle("oculto");
-      btnBlocos.textContent = submenuBlocos.classList.contains("oculto") ? "Blocos ▾" : "Blocos ▴";
-    });
-  });
-  </script>
-
 <body>
 <header class="barra">
   <div class="voltarbarra">
     <p>IFSC Chapecó</p>
   </div>
   <div class="hamburguerbarra">
-    <p>Visite os blocos</p>
     <a href="#" id="btn-menu">
       <img src="../IMG/hamburger.png" alt="Menu">
     </a>
@@ -86,11 +26,10 @@
   <nav id="menu" class="menu-mobile">
     <button id="fechar-menu">✖</button>
     <ul>
-  <li><a href="../index.html"><button class="categoriaJogo">Home</button></a></li>
-  <li><a href="jogoFazenda.html"><button class="categoriaJogo">Endereço</button></a></li>
-  <li><a href="jogoDomesticos.html"><button class="categoriaJogo">Imagens</button></a></li>
+    <li><a href="../index.html"><button class="categoriaJogo">Home</button></a></li>
+    <li><a href="../HTML/tourMaps.html"><button class="categoriaJogo">Tour</button></a></li>
+    <li><a href="../index.html"><button class="categoriaJogo">Endereço</button></a></li>
 
-  <!-- Item com submenu -->
   <li>
     <button class="categoriaJogo" id="btn-blocos">Blocos ▾</button>
     <ul id="submenu-blocos" class="submenu oculto">
@@ -118,13 +57,11 @@
       <p>Caminho para o Bloco F</p>
     </div>
 
-
     <div class="view360">
       <iframe src="https://momento360.com/e/u/0ff45dd87faf45a7883400a27729ae03?utm_campaign=embed&utm_source=other&heading=0&pitch=0&field-of-view=75&size=medium&display-plan=true" allowfullscreen></iframe>
       <p>Estacionamento/Basquete</p>
     </div>
 
-    
     <div class="view360">
       <iframe src="https://momento360.com/e/u/bf5d88e7ca8c4b3ab90d2743d864670a?utm_campaign=embed&utm_source=other&heading=0&pitch=0&field-of-view=75&size=medium&display-plan=true" allowfullscreen></iframe>
       <p>Caminho para o Bloco F</p>
@@ -135,7 +72,6 @@
       <p>Entrada do Bloco F</p>
     </div>
 
-  
     <div class="view360">
       <iframe src="https://momento360.com/e/u/53a97933085b442fa9c37475742d87ba?utm_campaign=embed&utm_source=other&heading=0&pitch=0&field-of-view=75&size=medium&display-plan=true" allowfullscreen></iframe>
       <p>Elevador/Escadas para os laboratórios</p>
@@ -145,7 +81,6 @@
       <iframe src="https://momento360.com/e/u/95c294b75eb94593a01ba5db500ffced?utm_campaign=embed&utm_source=other&heading=-78.37&pitch=0.1&field-of-view=75&size=medium&display-plan=truehttps://momento360.com/e/u/95c294b75eb94593a01ba5db500ffced?utm_campaign=embed&utm_source=other&heading=-78.37&pitch=0.1&field-of-view=75&size=medium&display-plan=true" allowfullscreen></iframe>
       <p>Corredor do Quinto Andar</p>
     </div>
-
 
     <div class="view360">
       <iframe src="https://momento360.com/e/u/a1a0614c941b405ab7a3dd2cf6496fe5?utm_campaign=embed&utm_source=other&heading=0&pitch=0&field-of-view=75&size=medium&display-plan=true" allowfullscreen></iframe>
@@ -157,9 +92,9 @@
     <p>&copy; 2025 IFSC Chapecó — Tour Virtual</p>
   </footer>
 
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"></script>
 
+    <script src="../JS/javaScript.js"></script>
 
 </body>
 </html>
